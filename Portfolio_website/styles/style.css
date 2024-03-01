@@ -1,0 +1,251 @@
+/* html */
+html {
+  background-image: url(../img/fond.jpg);
+  width: 100%;
+  color: white;
+  background-position: center center;
+  background-size: cover cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#nav{
+  padding-right: 5%;
+  display: flex;
+  align-content: center;  
+  justify-content: space-between;
+}
+
+#menu-items li{
+  list-style: none;
+  display: inline;
+      
+}
+
+#menu-items ul{
+  text-decoration: none;
+  color: white;
+}
+
+#Logo{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+  margin-top: 0;
+}
+
+.btssio{
+  margin-top: 5%;
+  text-align: center;
+}
+
+.btssio p{
+  max-width: 100%;
+}
+
+h1{
+  text-align: center;
+  text-decoration: underline;
+  z-index: 1;
+}
+
+h2{
+  text-decoration: underline;
+}
+
+#pregrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+#optionsisr #optionslam {
+  margin-top: 10%;
+  max-width: 35%;
+}
+
+#optionsisr{
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+#optionslam{
+  grid-column: 2/2;
+  grid-row: 1;
+  margin-left: 5vw;
+}
+
+.maintext {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.menu-items {
+  display: none;
+}
+
+.ordi2 ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+.ordi2 ul a {
+  padding-right: 5vw;
+  display: inline-block;
+  align-content: center;  
+  justify-content: space-between;
+  color: white;
+}
+
+#moi {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+#cv {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.montbrillant { 
+  width: 20%;
+  border-radius: 10%;
+}
+
+.arbusigny { 
+  width: 20%;
+  border-radius: 10%;
+}
+
+.batiment { 
+  width: 20%;
+  border-radius: 10%;
+}
+
+.livraison { 
+  width: 20%;
+  border-radius: 10%;
+}
+
+.labofrance { 
+  width: 20%;
+  border-radius: 10%;
+}
+
+.fibre { 
+  width: 20%;
+  border-radius: 10%;
+}
+
+/* CONTACT */
+main h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+} 
+
+.formulaires {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.social {
+  position: relative;
+  justify-content: center;
+  align-items: center;  
+}
+
+.social img {
+  display: inline-block;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+
+
+/*VERSION MOBILE*/
+
+@media screen and (max-width: 480px) {
+
+.ordi2 {
+  display: none;
+}
+
+  /* BURGER */    
+  .menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    margin-top: -5px;
+  }
+  .burger-menu {
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    transition: transform 0.5s ease;
+  }
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 2.5px 0;
+    transition: 0.4s;
+  }
+  .burger-menu.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger-menu.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligner les éléments en haut */
+    align-items: center; /* Centrer les éléments horizontalement */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    background-color: rgba(78, 75, 233, 0.712);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    margin-top: 100px;
+  }
+  .menu-items a {
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    font-size: 6vw;
+    margin-bottom: 50px;
+  }
+  body.menu-open {
+    overflow: hidden;
+  }
+  .menu-items.show {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+}
+

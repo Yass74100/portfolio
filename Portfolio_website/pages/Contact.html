@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Accueil-Mon portfolio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="ordi2">
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./AProposDeMoi.html">A propos de moi</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-container">
+          <div class="burger-menu" id="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="menu-items" id="menu-items">
+            <a href="../index.html">Accueil</a>
+            <a href="../pages/AProposDeMoi.html">A propos de moi</a>
+            <a href="../pages/Contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header> 
+    <main>
+      <h3>Formulaire de contact</h3>
+      <p>Une question ? Suggestion ? Réclamation ? Ecrivez-nous !</p>
+      <div class="formulaires">  
+        <form="post" method="post">
+          <label for="email">Votre adresse email</label>                    
+          <input type="email" name="email" id="email" required>                  
+          <label for="message" id="msg">Votre message</label>                    
+          <textarea name="message" id="message" required></textarea>                   
+          <input type="submit" value="Envoyer" class="submit">                   
+        </form>
+      </div>
+      <p>Vous pourrez me retrouver sur les différentes plateformes sociales et professionnelles :</p>
+      <a href="#" class="social"><img src="../img/facebook.png" alt="social"></a>
+      <a href="#" class="social"><img src="../img/instagram.png" alt="social"></a>
+      <a href="#" class="social"><img src="../img/linkedin.png" alt="social"></a>
+    </main>
+    <footer>
+      <p>Copyright © 2024 Yanis Altun</p>
+      <a href="../pages/MentionsLegales.html">Mentions Légales</a>
+    </footer>
+    <script src="../js/js.js"></script>
+  </body>
+</html>
